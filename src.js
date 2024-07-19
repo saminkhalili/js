@@ -113,13 +113,63 @@ let wt=2345567
 console.log(wt.toPrecision(3));
 let qq=23.4556
 console.log(qq.toPrecision(6));
-console.log(3332.toExponential()); // reason of error is that after number we have . and js think that toexp.... is number ! witch is not . in below we see how to fix it .
+console.log(3332..toExponential()); // reason of error is that after number we have . and js think that toexp.... is number ! witch is not . in below we see how to fix it .
 console.log(3332..toExponential()); 
 console.log(3332 .toExponential()); 
 console.log(3332.0.toExponential());
 console.log((3332).toExponential());
 
 //کار با رشته ها در جاوا اسکریپت lesson 6
+//strings defination/ characters escaping/ templates literal
+ let tr='hello';
+ console.log(tr);
+ let tz="hello";
+ console.log(tz);
+ let str="it's a car ";
+ console.log(str);
+ let str1='my name is "samin"';
+ console.log(str1);
+ let str2='my name is \"samin\" and that\'s my car ';
+ console.log(str2);
+ let line="this is\n about making\n new lines";//enter
+ console.log(line);
+ let thisnumber=10;
+ let thisstring=`im gona show you the value of this number here ${thisnumber}`; //how to pass a variable only if u use backtick > `
+ console.log(thisstring);
+ console.log(thisstring.length);//space included
+ console.log(thisstring.toUpperCase());//change all letter to caps
+ console.log(thisstring.charAt(1));//m
+ console.log(thisstring[1]);//m
+ console.log(thisstring.indexOf('s'));
+ console.log(thisstring.indexOf('show'));//first character index >s
+ //caps also matter here
+ console.log(thisstring.indexOf('s',5));//search for first s after index 5
+ console.log(thisstring.lastIndexOf('s',5));//search for first s from end of index 5
+ console.log(thisstring.lastIndexOf('nist',5));//search a latter that does not exist bring us -1
+ console.log(thisstring.includes('samin'));//searching for a whole word 
+let str5="samin khalili";
+console.log(str5.startsWith('samin'));//boolean result
+console.log(str5.endsWithWith('samin'));//boolean result
+console.log(str5.substring(3));//select from a index till end of text
+console.log(str5.substring(3,10));//select from 3 index till 10.end with 9
+let tt="samin",rr="khalili";
+console.log(tt.repeat(2));
+console.log(tt.substring(1,2).repeat(2));
+console.log(tt.concat('666'));
+console.log(tt + rr + 'this is my full name');
+console.log('samin'.repeat(5));
+console.log('samin'.concat('6'));
+console.log('samin'.charAt(2));
+console.log('saminkhalili'.length);
+
+//تبدیل انواع داده ها به یکدیگر lesson 7
+
+ 
+
+
+
+
+
 
 
 
