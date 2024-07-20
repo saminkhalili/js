@@ -149,7 +149,7 @@ console.log((3332).toExponential());
  console.log(thisstring.includes('samin'));//searching for a whole word 
 let str5="samin khalili";
 console.log(str5.startsWith('samin'));//boolean result
-console.log(str5.endsWithWith('samin'));//boolean result
+console.log(str5.endsWith('samin'));//boolean result
 console.log(str5.substring(3));//select from a index till end of text
 console.log(str5.substring(3,10));//select from 3 index till 10.end with 9
 let tt="samin",rr="khalili";
@@ -163,6 +163,65 @@ console.log('samin'.charAt(2));
 console.log('saminkhalili'.length);
 
 //تبدیل انواع داده ها به یکدیگر lesson 7
+//conversion between strings & Numbers
+console.log('3'*5);
+console.log('hi'*5);//NaN
+console.log('10.3'*1);
+console.log('0xff'*1);
+console.log('322aa'*1);//NaN
+console.log('         '*5);// 0
+console.log('3'+ 5); //35
+let df='100';
+let dd=Number(df);
+console.log(Number('100')); 
+console.log(Number('hello')); //NaN 
+console.log(Number('2e6'));   //2000000
+//numbers to strings
+console.log(String(10)); 
+console.log(String(22.11)); 
+console.log(String(2e6)); 
+console.log(String(NaN)); 
+console.log(String(100..toString(2))); // mabna 2
+//parseInt + parseFloat Function
+console.log(parseInt('12313samin')); 
+console.log(parseInt('         ')); 
+console.log(parseInt('-123.42313'));
+console.log(parseInt('100011110',2));
+console.log(parseInt('abc123',10));
+//if u use mabna with float the result is 0
+console.log(parseFloat('abc123',10)); // 0
+console.log(parseFloat('22.55.66')); // 22.55
+console.log(parseFloat('0908.5')); 
+console.log(parseFloat('3.125e7'));
+//undefined + null + boolean conversion
+console.log(parseInt(undefined));
+console.log(Number(undefined));
+console.log((3 * undefined));
+console.log(undefined +3);
+console.log(undefined+'3');
+console.log(Number(null));
+console.log(parseInt(null));
+console.log(null+ 10);
+console.log(null+ '10');
+console.log(true + 10);
+console.log(false + 10);
+console.log(Boolean(0));//false
+console.log(Boolean(''));//false
+console.log(Boolean(NaN));//false
+console.log(Boolean(undefined));//false
+console.log(Boolean(null));//false
+console.log(Boolean('0'));//true
+console.log(Boolean('AAA'));//true
+console.log(Boolean(22.5));//true
+
+//عملگرهای منطقی + مقایسه ای و تقدم عملگرا ها lesson 8
+
+
+
+
+
+
+
 
  
 
