@@ -236,6 +236,7 @@ op=false||'hi';//hi
 op='hi'||true;//hi
 op=true||false|| 'hi' || true;//true
 console.log(op);
+1
 
 
 
