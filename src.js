@@ -215,6 +215,27 @@ console.log(Boolean('AAA'));//true
 console.log(Boolean(22.5));//true
 
 //عملگرهای منطقی + مقایسه ای و تقدم عملگرا ها lesson 8
+let op;
+op=true;
+//NOT
+op=!true;//false
+op=!0;    //true
+op=!'hihihi';   //false
+op=!null;   //true
+//AND
+op= true && false;  //false
+op= false && false; //false
+op= 'hello' && true;   //true                      
+op= true && 'hello'; //hello                        
+op= true && true && true&& true&& false&& true;//false
+//OR
+op=true||false;
+op=false||false;
+op=false||true;
+op=false||'hi';//hi
+op='hi'||true;//hi
+op=true||false|| 'hi' || true;//true
+console.log(op);
 
 
 
