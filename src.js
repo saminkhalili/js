@@ -213,7 +213,6 @@ console.log(Boolean(null));//false
 console.log(Boolean('0'));//true
 console.log(Boolean('AAA'));//true
 console.log(Boolean(22.5));//true
-
 //عملگرهای منطقی + مقایسه ای و تقدم عملگرا ها lesson 8
 let op;
 op=true;
@@ -236,7 +235,57 @@ op=false||'hi';//hi
 op='hi'||true;//hi
 op=true||false|| 'hi' || true;//true
 console.log(op);
-1
+let aaaa= 10 , bb =40 , cc ='10' ,ddd='hello' , answerr;
+answerr=aaaa=bb;//f
+answerr=aaaa=cc;//t
+answerr=aaaa=ddd;//f
+answerr=bb=20;//f
+answerr=10=10;//t
+answerr=" "==0;//t
+answerr=" "=="0";//f
+answerr=false=="0";//t
+answerr="1"==true;//t
+answerr="2"==true;//f
+answerr="true"==true;//f
+answerr=null==undefined;//t
+answer=" "===0;//f
+answer=" "==="0";//f
+answer=false==="0";//f
+answer="1"===1;//f
+answer="1"==="1";//t
+answer=null===undefined;//f
+answerr=NaN===NaN;//f
+answerr=Number.isNaN(NaN);//t
+answerr=10 != '10';//f
+answer=10 !=='10';//t
+answerr=8 > 4;//t
+answerr=8 < 4;//f
+answerr=8 >= 4;//t
+answerr=8 >= 4;//t
+answerr=-1 <= 1;//t
+answerr=-1 <= -1;//t
+answerr=8 <= '8';//t
+answerr ='apples' < 'bananas';//true
+answerr ='apples' < 'Bananas';//false
+//minimal Evaluation
+let education = 3;
+let age = 27;
+let city = 'tehran';
+let condition1 = education>= 4;
+let condition2 =age <= 30;
+let condition3 = city==='tehran';
+answer = condition1 && condition2 && condition3;
+console.log(answer);
+console.log(true||false||false||'H');
+console.log('Hello'|| false);
+console.log(true && true && 0 && false && true );
+//operator precedence
+let answer1= 2 + 3 * 4;
+console.log(answer1);
+let answer2=true || true && false;
+console.log(answer2);
+//آشنایی با ساختار های شرطی lesson 9
+
 
 
 
