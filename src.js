@@ -285,8 +285,74 @@ console.log(answer1);
 let answer2=true || true && false;
 console.log(answer2);
 //آشنایی با ساختار های شرطی lesson 9
+let grade = 15;
+if(grade>10){
+    console.log(grade);
+}
+if(grade>=10){
+    console.log('good job');
+    if(grade==20){
 
+        console.log('EZ');
+    }
+}
+if(grade<10){
+    console.log('not good');
+}  
 
+if(grade>= 0 && grade <=20){
+    console.log('good');
+}else{
+    console.log('not good');
+}
+//same code here
+(grade>= 0 && grade <=20) ? console.log('good') : console.log('not good');
+let m1=-30,m2;
+m2= m1>= 0 ? m1:-m2;
+console.log(m2);
+
+if (grade >= 15) {
+    console.log('عالي');
+} else if (grade >= 10) {
+    console.log('خوب');
+} else if (grade >= 5) {
+    console.log('ضعیف');
+} else {
+    console.log('خیلی ضعیف');
+}
+//switch example
+let i = 10;
+switch(i) {
+    case 10:
+        console.log("A");
+        break;
+    case 20:
+        console.log("B");
+        break;
+    case 30:
+        console.log("C");
+        break;
+    default:
+        console.log("D");
+}
+grade=11;
+switch(true){
+    case(grade >= 0 && grade <5) :
+    console.log('not good');
+    break;
+    case(grade >= 5 && grade <10) :
+    console.log('good');
+    break;
+    case(grade >= 10 && grade <15) :
+    console.log('very good');
+    break;
+    case(grade >= 15 && grade <20) :
+    console.log('gg good');
+    break;
+    default:
+        console.log('nop!');
+}
+//آرایه ها در جاوا اسکریپت lesson 10
 
 
 
