@@ -353,8 +353,94 @@ switch(true){
         console.log('nop!');
 }
 //آرایه ها در جاوا اسکریپت lesson 10
-
-
+let array1 = new Array(10,20,'hi');
+let array2 = [10,20,'hi'];
+console.log(typeof array1);//object
+// Logging arrays
+console.log(array1);
+console.log(array2);
+// Checking the type of array1
+console.log(typeof array1);
+// Accessing elements of the arrays
+console.log(array1[0]);
+console.log(array2[2]);
+console.log(array1[4]);
+// Modifying elements of array1
+array1[0] = 4;
+array1[4] = 22;
+console.log(array1);
+// Initializing a nested array
+let array3 = [10, [20, 22, 11], 'Hello', true];
+console.log(array3);
+console.log(array3[1]);
+console.log(array3[1][2]);
+// Working with the length property of arrays
+console.log(array1.length);
+array1.length = 2;
+console.log(array1);
+array1.length = 5;
+console.log(array1);
+console.log(array1.length);
+delete array1[0];
+console.log(array1);
+console.log(array1.length);
+// Initializing arrays
+let array1 = [10, 20, 'Hello'];
+let array22 = [10, 20, 'Hello'];
+// Comparing arrays and their elements
+console.log(array1 == array2);
+console.log(array1[1] == array22[1]);
+console.log(array1[1] == array22[2]);
+// Assigning one array to another
+let array4 = array1;
+console.log(array1 == array3);
+array1[1] = 'JavaScript';
+console.log(array3);
+// Destructuring assignment
+let [x, y, z] = [1, 3, 4];
+console.log(x, y, z);
+[x, y, z] = [z, x, y];
+console.log(x, y, z);
+// Working with a constant array
+const fruits = ['Apple', 'Orange', 'Banana'];
+fruits[1] = 'Berry';
+console.log(fruits);
+fruits = [22, 33]; // This line will cause an error
+//pop/push/shift
+let fruitss=['Apple','Orange','Banana']
+let gg = fruitss.pop();
+console.log(gg);//this will bring back last arrya and then remove it from array
+let yy = fruitss.push('potato');
+console.log(yy);//put a new value in new array and the retrive the size of array
+console.log(fruitss);
+let uu = fruitss.shift();//same as pop but this will remove first array
+console.log(uu);
+console.log(fruitss);
+let uuu = fruitss.unshiftshift();
+console.log(uuu);
+console.log(fruitss);
+fruitss = fruitss.concat(['a' , 'b'])//add a and b to end of array
+console.log(fruitss);
+let array6=['js','java'];
+let array7=['php','c#','python'];
+array8=[array6 , array7];
+array8 = [...array6 , ...array7];
+console.log(array8);
+console.log(array8.join(' & '));
+let array9=['php','c#','python','lol','kek'];
+let a1 = array9.slice(1,3);//from array 1 till array 3
+console.log(a1);//result is > c# and python
+let a2 = array9.splice(1,2);//this will remove the array and also bring back the selected array + u can also add array with splice method
+console.log(a2);
+console.log(array9);
+let a11 = array9.slice(0,1,'1','2');
+a11 = array9.reverse();
+a11 = array9.sort();
+console.log([5,9,15,23].sort());//result > 15 23 5 9
+console.log(array9.indexOf('php'));//if we didnt found it the result is -1
+console.log(array9.includes('php'));//true
+console.log(array9.includes('php'));//false
+//ساختار های تکرار lesson 11
 
 
 
