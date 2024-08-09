@@ -63,7 +63,7 @@ answer += 100;//answer = answer + 100
 console.log(answer);
 console.log(answer *= 2);
 console.log(answer /= 2);
-// console.log(answer %= 2);//baghimande
+console.log(answer %= 2);//baghimande
 console.log(answer ** 2);//tavan
 console.log(answer ++);
 console.log(answer --);
@@ -240,7 +240,7 @@ answerr=aaaa=bb;//f
 answerr=aaaa=cc;//t
 answerr=aaaa=ddd;//f
 answerr=bb=20;//f
-answerr=10=10;//t
+//answerr= 10 = 10;//t //i have error in this line of code
 answerr=" "==0;//t
 answerr=" "=="0";//f
 answerr=false=="0";//t
@@ -385,16 +385,16 @@ delete array1[0];
 console.log(array1);
 console.log(array1.length);
 // Initializing arrays
-let array1 = [10, 20, 'Hello'];
+let array111 = [10, 20, 'Hello'];
 let array22 = [10, 20, 'Hello'];
 // Comparing arrays and their elements
-console.log(array1 == array2);
-console.log(array1[1] == array22[1]);
-console.log(array1[1] == array22[2]);
+console.log(array111 == array2);
+console.log(array111[1] == array22[1]);
+console.log(array111[1] == array22[2]);
 // Assigning one array to another
-let array4 = array1;
-console.log(array1 == array3);
-array1[1] = 'JavaScript';
+let array4 = array111;
+console.log(array111 == array3);
+array111[1] = 'JavaScript';
 console.log(array3);
 // Destructuring assignment
 let [x, y, z] = [1, 3, 4];
@@ -405,7 +405,7 @@ console.log(x, y, z);
 const fruits = ['Apple', 'Orange', 'Banana'];
 fruits[1] = 'Berry';
 console.log(fruits);
-fruits = [22, 33]; // This line will cause an error
+//fruits = [22, 33]; // This line will cause an error
 //pop/push/shift
 let fruitss=['Apple','Orange','Banana']
 let gg = fruitss.pop();
@@ -416,7 +416,7 @@ console.log(fruitss);
 let uu = fruitss.shift();//same as pop but this will remove first array
 console.log(uu);
 console.log(fruitss);
-let uuu = fruitss.unshiftshift();
+let uuu = fruitss.unshift();
 console.log(uuu);
 console.log(fruitss);
 fruitss = fruitss.concat(['a' , 'b'])//add a and b to end of array
@@ -441,8 +441,66 @@ console.log(array9.indexOf('php'));//if we didnt found it the result is -1
 console.log(array9.includes('php'));//true
 console.log(array9.includes('php'));//false
 //ساختار های تکرار lesson 11
+//while do/while for
+let a12 = 0;
+while(a12 < 3){
+    console.log(a12);
+    a12 ++;//or --
+}
+console.log('finish');
 
+do{
+    console.log(a12);
+    a12 ++;
+}while (a12 < 3)//this wila12 at least 1 time
 
+for (a12 = 0; a12 < 3; a12++) {
+    console.log(a12);
+}
+//nested loop
+a12 = 20;
+a13=21;
+for (let a12 = 0; a12 < 3; a12++) {
+    for (let a13 = 0; a13 < 3; a13++) {
+        console.log(a13);
+    }    
+}
+let output = '';
+for (let nn = 1; nn <= 10; nn++){
+    for (let mm = 1; mm <= 10; mm++){
+        output += (nn*mm) + '   ';
+    }
+    output += '\n';//make a enter
+}
+console.log(output);
+let numbers = [3,5,1,11,14]
+for (let i = 0; i < numbers.length; i++) {
+    numbers[i] *= 2    
+}
+console.log(numbers);
+
+let fff =['a','b','c','d','e','f']//for each array
+for(let value of fff){
+    console.log(value);
+}
+for (let i = 0; i < 10; i++) {
+    if (i ==4) {
+        break;
+    }    
+    console.log(i);
+}
+for (let i = 0; i < 10; i++) {
+    if (i == 8) {
+        break;
+    }
+    else if(i % 2 == 0){
+        continue;
+    }else{
+        console.log(i);
+    }    
+}
+//آشنایی با مجموعه ها و نقشه ها lesson 12
+//sets and maps
 
 
 
