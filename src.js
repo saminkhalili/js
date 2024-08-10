@@ -501,10 +501,25 @@ for (let i = 0; i < 10; i++) {
 }
 //آشنایی با مجموعه ها و نقشه ها lesson 12
 //sets and maps
+let mySet = new Set();
+console.log(mySet);
 
+mySet.add(1);
+console.log(mySet);
+mySet.add(1).mySet.add(2).mySet.add(3);
+mySet.add(1);//nothing gona happen cuz we alredy have 1 in our set
+mySet = new Set([1,2,3,4])
+console.log(mySet);//u can remove dublicate from a array with set!!!!!
+mySet = new Set('hello');//the result is helo! cuz we already have a l in out string!
+mySet = new Set(['hello']);//this will be hello
+mySet = new Set(['333'],333)
+console.log(mySet.size);
+console.log(mySet.has('333'));
+let abb = mySet.delete('333');//abb = true
+let abbb = mySet.delete('nothing');//abb = false
+mySet.clear();//empty set
+//map
 
-
- 
 
 
 
