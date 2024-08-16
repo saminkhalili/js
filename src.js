@@ -1,4 +1,4 @@
-//lesson 1+2+3
+//lesson 1+2+3 ecma script
 // // console.log('from js 3');
 const getMessage = () => "<h3>it is working1</h3>";
 document.body.innerHTML = getMessage();
@@ -566,10 +566,46 @@ for (let[key,value] of personMap.entries()) {
     console.log(key + " = " + value);
 }
 //آشنایی اولیه با توابع lesson 13
+function print() {
+    console.log("function called");  //this was function Declaration model
+}
+print();
+const firstFunction = function(){
+    console.log("function called"); //this was function Expression model
+}
+firstFunction();
 
+let secondFunction = firstFunction;  
+secondFunction(); 
 
+//input & output in function 
+//parametrs & aurguments
+function func1(firstName , lastName , age) {
+    console.log(firstName);
+    console.log(lastName);
+    console.log(age);
+}
+func1('samin','khalili',30)
 
+function func2(a , b , c) {
+let avarage , total ;
+total = a+c+d;
+avarage=total/3;
+console.log(avarage);
+}
+func2(2,1,3,4);//the result will dont consider 4
+func2(2,1);//NaN
 
+function func3(a , b , c) {
+    let avarage , total ;
+    total = a+b+c;
+    avarage=total/3;
+    return avarage;
+}
+let rty = func3(1,2,3);
+console.log(rty);
+console.log(func3(1,2,3));
+//نکاتی در مورد تعریف تابع arrow functions /lesson 14
 
 
 
