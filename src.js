@@ -606,9 +606,88 @@ let rty = func3(1,2,3);
 console.log(rty);
 console.log(func3(1,2,3));
 //نکاتی در مورد تعریف تابع arrow functions /lesson 14
+function func4() {
+    console.log(arguments.length);
+}
+func4(1);//1
+func4();//0
+func4(1,10,20);//3
+function miangin() {
+    let avarage , total = 0;
+    for (let number of arguments) {
+    total =+ number;    
+    }
+    avarage = total / arguments.length;
+    return avarage;
+} 
+func4(1,10,20);
+func4(1);
+func4(1,10);
+//ecma script6
+//rest 
+function mean(...numbers) {
+    let avarage , total = 0;
+    for (let number of numbers) {
+    total =+ number;    
+    }
+    avarage = total / numbers.length;
+    return avarage;
+}
+mean(1,10,20);
+mean(1);
+mean(1,10);
+function sumOrMulti(operation, ...numbers) {
+    if (operation === 'sum') {
+        let result = 0;
+        for (let number of numbers) {
+            result += number;
+        }
+    } else if (operation === 'multi') {
+        let result = 1;
+        for (let number of numbers) {
+            result *= number;
+        }
+    }
+    return result;
+}
+console.log(sumOrMulti('sum',12,2,1));
+console.log(sumOrMulti('multi',12,2,1));
+//Defult Parametrs (defult arguments)
+function power(base , count =2) {//count is deafult parametr and the last arg is the defult!
+        let result = 1;
+        for (let i=0;i < count ;i++) {
+            result *= base;
+        }
+    return result;
+}
+console.log(power(3,4));
+/*function power(){
+    console.log('hello world');  //if u make a function with same name u basicly ignore the first function
+}
+*/
+//for fix >
+//defrent betwwen declaration and expration 
+//hosting!
+power = function(){
+    console.log('hi world');
+} 
 
+function s1(x) {
+    return x * x;   //declaration 
+} 
+const s2 = function (x) { //expression 
+    return x * x;
+}
+const s3 = x => x * x;  //Arrow functions
 
-
+const sum = ( x , y) => x + y;
+const msg = () => "hi world";
+const tax = (salary) => {
+    let taxable = salary - 50 ;
+    let amount = 0.25 * taxable;
+    return amount;
+}
+//hosting lesson 15
 
 
 
