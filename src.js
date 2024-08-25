@@ -687,7 +687,65 @@ const tax = (salary) => {
     let amount = 0.25 * taxable;
     return amount;
 }
-//hosting lesson 15
+//hoisting lesson 15
+//defrent between var and let > var is more global and u can access to it but let only work in the block that u type it! let and const are also the same
+var v = 10;
+function example() {
+    var b = 20;
+    console.log(v);
+    console.log(b);
+    if (true) {
+        var c = 30;
+        console.log(v);
+        console.log(b);
+        console.log(c);
+    }
+    console.log(v);
+    console.log(b);
+    console.log(c);
+}
+
+let at = 10;
+function example() {
+    let at = 20;
+    console.log(at);  // here at = 20
+    at = 30;
+    console.log(at);  // here at = 30
+}
+example();
+console.log(at);  // here at = 10
+
+function outer() {
+    function inner() {
+        console.log('inner');
+    }
+    console.log('outer');
+    inner();
+}
+outer();
+
+// Variable & Function Hoisting
+
+function example1() {
+    console.log(a);
+    var a = 40;
+}
+
+example1();
+
+example2();
+
+function example2() {
+    console.log("example2");
+}
+
+// example3();
+
+let example3 = function() {
+    console.log("example3");
+}
+
+example3();
 
 
 
